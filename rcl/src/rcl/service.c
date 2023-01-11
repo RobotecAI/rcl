@@ -299,6 +299,7 @@ rcl_send_response(
   rmw_request_id_t * request_header,
   void * ros_response)
 {
+    printf("<<<< Send response inside rcl\n");
   RCUTILS_LOG_DEBUG_NAMED(ROS_PACKAGE_NAME, "Sending service response");
   if (!rcl_service_is_valid(service)) {
     return RCL_RET_SERVICE_INVALID;  // error already set
