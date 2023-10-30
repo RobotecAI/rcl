@@ -319,6 +319,7 @@ rcl_get_node_names(
   rcutils_string_array_t * node_names,
   rcutils_string_array_t * node_namespaces)
 {
+  printf("[DEBUG] rcl_get_node_names\n");
   if (!rcl_node_is_valid(node)) {
     return RCL_RET_NODE_INVALID;  // error already set
   }
